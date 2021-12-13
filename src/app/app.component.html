@@ -1,0 +1,6 @@
+<div class="container">
+    <app-search-bar (submitted)="onTerm($event)">
+    </app-search-bar>
+    <h2 class="maintitle">This's a wikipedia Search bar available to you!</h2>
+    <app-page-list *ngIf="pages.length" [pages]="pages"></app-page-list>
+</div>
